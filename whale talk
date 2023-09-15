@@ -1,0 +1,35 @@
+
+var input = 'turpentine and turtles';
+
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+var resultArray = [];
+
+
+
+for (let i = 0; i < input.length; i++) {
+    let inputLetters = input[i];
+
+    if (inputLetters === 'e') {
+        resultArray.push(input[i]);
+
+    }
+    
+    if (inputLetters === 'u') {
+        resultArray.push(input[i]);
+
+    }
+        for (let j = 0; j < vowels.length; j++) {
+        const vowelLetters = vowels[j];
+    
+    if (inputLetters == vowelLetters) 
+        resultArray.push(inputLetters)
+    }
+
+    };
+   
+    var resultString = resultArray.join('');
+
+    var resultString = resultString.toUpperCase();
+
+    console.log(resultString);
